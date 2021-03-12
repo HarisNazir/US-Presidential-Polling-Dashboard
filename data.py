@@ -25,7 +25,7 @@ def scrape_poll_data():
         answers = r.find_all(class_="answer")
         values = r.find_all(class_='value')
 
-        if len(values) ==1:
+        if len(values) == 1:
             next_row = r.findNext("tr")
             value = next_row.find(class_="value")
             answer = next_row.find(class_='answer')
